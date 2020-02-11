@@ -19,7 +19,7 @@ public class WordCounter {
         return wordTally.get(wordToSearch);
     }
 
-    public void makeTallyFromText() {
+    public void makeWordTallyFromText() {
         String[] words = getWordsFromText();
         for (String word : words) {
             Integer currentCount = wordTally.getOrDefault(word, 0);

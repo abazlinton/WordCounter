@@ -13,7 +13,7 @@ public class WordCounterTest {
     @Before
     public void before(){
         wordCounter = new WordCounter("one two two three three three");
-        wordCounter.makeTallyFromText();
+        wordCounter.makeWordTallyFromText();
     }
 
     @Test
