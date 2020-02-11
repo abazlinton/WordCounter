@@ -11,7 +11,7 @@ public class WordCounter {
         this.wordTally = new HashMap<String, Integer>();
     }
 
-    private String[] makeWordsFromText() {
+    private String[] getWordsFromText() {
         return this.text.split(" ");
     }
 
@@ -20,7 +20,7 @@ public class WordCounter {
     }
 
     public void makeTallyFromText() {
-        String[] words = makeWordsFromText();
+        String[] words = getWordsFromText();
         for (String word : words) {
             Integer currentCount = wordTally.getOrDefault(word, 0);
             Integer nextCount = currentCount + 1;
