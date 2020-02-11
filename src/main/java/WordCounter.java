@@ -23,8 +23,8 @@ public class WordCounter {
         String[] words = getWordsFromText();
         for (String word : words) {
             Integer currentCount = wordTally.getOrDefault(word, 0);
-            Integer nextCount = currentCount + 1;
-            wordTally.put(word, nextCount);
+            Integer newCount = currentCount + 1;
+            wordTally.put(word, newCount);
         }
     }
 
